@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cnwt40clvtrn5" path="res://images/Buildings/Temple_Door.png" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://rx6thb0lp3e0" path="res://images/Decorations/Door_God_Poster.png" id="2_epypp"]
 [ext_resource type="Texture2D" uid="uid://csuhv2rk8qe7r" path="res://Example_Festive_Front_Door.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://c85l6oryutknn" path="res://Counter_1.png" id="4_0hol4"]
 
 [node name="Node2D" type="Node2D" unique_id=1663927764]
 
@@ -21,3 +22,8 @@ texture = ExtResource("2_epypp")
 position = Vector2(576.375, 323.375)
 scale = Vector2(0.8070577, 0.63814485)
 texture = ExtResource("3_epypp")
+
+[node name="Outdoor counter" type="Sprite2D" parent="CanvasLayer" unique_id=1474169323]
+position = Vector2(580.00006, 538)
+scale = Vector2(9.1328125, 3.7187502)
+texture = ExtResource("4_0hol4")
