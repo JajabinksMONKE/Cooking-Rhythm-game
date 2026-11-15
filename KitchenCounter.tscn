@@ -12,8 +12,16 @@
 [ext_resource type="Texture2D" uid="uid://d3jicjvtuk1qv" path="res://images/Raw food/chiken3.png" id="10_m008p"]
 [ext_resource type="Texture2D" uid="uid://fy3yng66vadp" path="res://wok.png" id="11_06717"]
 [ext_resource type="Script" uid="uid://cmnik673nhced" path="res://ClockNumbers.gd" id="12_s8a10"]
+[ext_resource type="Script" uid="uid://cy1cu687q0erc" path="res://BouncyBallScript.gd" id="13_gkthl"]
+[ext_resource type="Script" uid="uid://snq1dh44ysd5" path="res://RectangleCollision.gd" id="14_h2b1e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dt6fw"]
+radius = 32.20243
 
 [sub_resource type="SphereMesh" id="SphereMesh_dt6fw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dt6fw"]
+size = Vector2(403, 26)
 
 [node name="Kitchen" type="Node2D" unique_id=792813445]
 
@@ -87,13 +95,28 @@ theme_override_font_sizes/normal_font_size = 18
 text = "Day 1, 00:00"
 script = ExtResource("12_s8a10")
 
-[node name="BouncyBall1" type="MeshInstance2D" parent="." unique_id=1447930060]
-position = Vector2(926, 360)
+[node name="BouncyBall1" type="CharacterBody2D" parent="." unique_id=1033013429]
+script = ExtResource("13_gkthl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BouncyBall1" unique_id=1803342982]
+position = Vector2(925.00006, 373)
+scale = Vector2(0.99999994, 1)
+shape = SubResource("CircleShape2D_dt6fw")
+
+[node name="BouncyBall1" type="MeshInstance2D" parent="BouncyBall1" unique_id=1447930060]
+position = Vector2(925, 373.00003)
 scale = Vector2(66.69604, 63.60656)
 mesh = SubResource("SphereMesh_dt6fw")
 
-[node name="BouncedSurface" type="ColorRect" parent="." unique_id=1622332285]
-offset_left = 838.0
-offset_top = 576.0
-offset_right = 1141.0
-offset_bottom = 590.0
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=553708034]
+script = ExtResource("14_h2b1e")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1419346287]
+offset_left = 738.0
+offset_top = 583.0
+offset_right = 1142.0
+offset_bottom = 606.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=473164856]
+position = Vector2(939.5, 594)
+shape = SubResource("RectangleShape2D_dt6fw")
