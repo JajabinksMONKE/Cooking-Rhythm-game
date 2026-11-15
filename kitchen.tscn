@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://blo4o1yh4si2x"]
+
+[ext_resource type="Texture2D" uid="uid://byibwh677bwqt" path="res://Kitchen counter.png" id="1_vloss"]
+
+[node name="Kitchen" type="Node2D" unique_id=792813445]
+
+[node name="KitchenCounter" type="Sprite2D" parent="." unique_id=1965033804]
+texture_filter = 1
+position = Vector2(579, 218)
+scale = Vector2(8.84375, 8.84375)
+texture = ExtResource("1_vloss")
