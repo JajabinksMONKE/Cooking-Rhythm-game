@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c5pkmh1i2cxvi" path="res://images/Raw food/steak3.png" id="2_xsyy8"]
 [ext_resource type="Script" uid="uid://7yhuaka6386t" path="res://raw_steak.gd" id="3_efyc0"]
 [ext_resource type="AudioStream" uid="uid://b2jfx60275cqf" path="res://Shaolin Monks.mp3" id="3_kdutl"]
+[ext_resource type="Script" uid="uid://cst2dahkrm3v8" path="res://shaolin_monk_song.gd" id="5_06717"]
 [ext_resource type="Texture2D" uid="uid://bpfsrcrr0fuha" path="res://images/VEGGIES/VEGGIES_LINE/Tomato.png" id="5_xnsi2"]
 [ext_resource type="Texture2D" uid="uid://bgcy7fnwb0qw2" path="res://images/VEGGIES/VEGGIES_LINE/GreenCabbage.png" id="6_jluyr"]
 [ext_resource type="Script" uid="uid://dhcmccftv4uij" path="res://tomato.gd" id="6_m008p"]
@@ -35,6 +36,9 @@ script = ExtResource("3_efyc0")
 
 [node name="ShaolinMonkSong" type="AudioStreamPlayer" parent="." unique_id=2075323034]
 stream = ExtResource("3_kdutl")
+volume_db = 4.269
+autoplay = true
+script = ExtResource("5_06717")
 
 [node name="Tomato" type="Sprite2D" parent="." unique_id=876514996]
 texture_filter = 1
