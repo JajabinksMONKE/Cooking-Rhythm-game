@@ -6,3 +6,4 @@ func _ready():
 
 func show_accept_button():
 	accept_button.visible = true
+	

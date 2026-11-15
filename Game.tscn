@@ -5,7 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://c85l6oryutknn" path="res://Counter_1.png" id="3_t88pq"]
 [ext_resource type="Script" uid="uid://c6pl4ul4eyhrt" path="res://Scripts/OrderUI.gd" id="4_sb48q"]
 [ext_resource type="Script" uid="uid://cdypi83orfwc3" path="res://AcceptButton.gd" id="5_r0x5m"]
+[ext_resource type="Script" uid="uid://dlhmht52j5w55" path="res://AcceptButtonScript.gd" id="6_2vekm"]
 [ext_resource type="Script" uid="uid://weg1aa3c6g0q" path="res://DeclineButton.gd" id="6_3mrqo"]
+[ext_resource type="Script" uid="uid://cnpaqxyttadmu" path="res://DeclineButtonScript.gd" id="8_yx171"]
+[ext_resource type="Script" uid="uid://c8ss6060ke25q" path="res://BackButton2.gd" id="9_yhmtn"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wtcfe"]
 load_path = "res://.godot/imported/Example_Festive_Front_Door.png-9b4c2319e1bf46a667e8b7eb5d111aed.ctex"
@@ -95,6 +98,57 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kh0ps"]
+bg_color = Color(0.09019608, 0.08235294, 0.1764706, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.6509804, 0.29411766, 0.3137255, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4yost"]
+bg_color = Color(0.57254905, 0.3137255, 0.4117647, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.6784314, 0.6784314, 0.27058825, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwjdr"]
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.6784314, 0.6784314, 0.27058825, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lvtmh"]
+bg_color = Color(1, 0.61960787, 0.67058825, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.6784314, 0.6784314, 0.27058825, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="Game" type="Node2D" unique_id=10094002]
 script = ExtResource("1_u44n3")
 customer_scene = ExtResource("2_sb48q")
@@ -121,6 +175,7 @@ texture = ExtResource("3_t88pq")
 script = ExtResource("4_sb48q")
 
 [node name="OrderPanel" type="Panel" parent="OrderUI" unique_id=1968137621]
+visible = false
 z_index = 4
 anchors_preset = -1
 anchor_right = 0.035
@@ -144,24 +199,65 @@ text = "One scallion pancake, please!"
 script = ExtResource("5_r0x5m")
 
 [node name="AcceptButton" type="Button" parent="AcceptButton" unique_id=736479223]
+visible = false
 offset_left = 289.0
 offset_top = 484.0
 offset_right = 385.0
 offset_bottom = 515.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_dt6fw")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_r0x5m")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3mrqo")
 text = "Accept"
+script = ExtResource("6_2vekm")
 
 [node name="DeclineButton" type="CanvasLayer" parent="." unique_id=1487479871]
 script = ExtResource("6_3mrqo")
 
 [node name="DeclineButton" type="Button" parent="DeclineButton" unique_id=53507396]
+visible = false
 offset_left = 422.0
 offset_top = 485.0
 offset_right = 518.0
 offset_bottom = 516.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_phg8r")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_joorw")
 theme_override_styles/hover = SubResource("StyleBoxFlat_2vekm")
 text = "Decline"
+script = ExtResource("8_yx171")
+
+[node name="HatingEasterEggPanel" type="Panel" parent="." unique_id=1365362297]
+z_index = 11
+offset_left = 276.0
+offset_top = 97.0
+offset_right = 898.0
+offset_bottom = 618.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kh0ps")
+
+[node name="HatingText" type="Label" parent="HatingEasterEggPanel" unique_id=1961345720]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 76.0
+offset_right = 693.0
+offset_bottom = 311.0
+theme_override_font_sizes/font_size = 22
+text = "OMG WHY WOULD YOU DENY THE ORDER
+ MAAAAAAAN
+ LIKE WE DIDNT PLAN TS OUT.
+So hum click the back button below and never
+ deny an order again
+ because it could break the game :) 
+Sincerely, the game creators."
+
+[node name="BackButton2" type="Button" parent="HatingEasterEggPanel" unique_id=1332793819]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 348.0
+offset_right = 450.0
+offset_bottom = 477.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4yost")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gwjdr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lvtmh")
+text = "BACK!!!!!"
+script = ExtResource("9_yhmtn")
