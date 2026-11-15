@@ -134,3 +134,8 @@ offset_bottom = 606.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=473164856]
 position = Vector2(939.5, 594)
 shape = SubResource("RectangleShape2D_dt6fw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=823659488]
+stream = ExtResource("3_kdutl")
+autoplay = true
+parameters/looping = false
