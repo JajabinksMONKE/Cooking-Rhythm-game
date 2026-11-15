@@ -4,6 +4,7 @@ var speed = 400
 var delta = 2
 
 func _ready():
+	print_debug("asdf")
 	self.position = Vector2(481, 381)
 
 func _unhandled_input(event: InputEvent) -> void:

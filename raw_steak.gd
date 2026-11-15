@@ -4,6 +4,7 @@ var speed = 400
 var delta = 2
 
 func _ready():
+	print_debug("fdsa")
 	self.position = Vector2(481, 459)
 
 func _unhandled_input(event: InputEvent) -> void:
