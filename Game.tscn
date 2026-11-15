@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://b03huq8c2scrr" path="res://Characters/Character 1.tscn" id="2_sb48q"]
 [ext_resource type="Texture2D" uid="uid://c85l6oryutknn" path="res://Counter_1.png" id="3_t88pq"]
 [ext_resource type="Script" uid="uid://c6pl4ul4eyhrt" path="res://Scripts/OrderUI.gd" id="4_sb48q"]
+[ext_resource type="Script" uid="uid://cdypi83orfwc3" path="res://AcceptButton.gd" id="5_r0x5m"]
+[ext_resource type="Script" uid="uid://weg1aa3c6g0q" path="res://DeclineButton.gd" id="6_3mrqo"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wtcfe"]
 load_path = "res://.godot/imported/Example_Festive_Front_Door.png-9b4c2319e1bf46a667e8b7eb5d111aed.ctex"
@@ -20,6 +22,78 @@ corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dt6fw"]
+bg_color = Color(1, 0.4117647, 0.52156866, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.3647059, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0x5m"]
+bg_color = Color(0.46865314, 0, 0.16379553, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.3647059, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3mrqo"]
+bg_color = Color(1, 0.5753054, 0.6347323, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.3647059, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_phg8r"]
+bg_color = Color(1, 0.4117647, 0.52156866, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.3647059, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_joorw"]
+bg_color = Color(0.46865314, 0, 0.16379553, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.3647059, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2vekm"]
+bg_color = Color(1, 0.5753054, 0.6347323, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.3647059, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [node name="Game" type="Node2D" unique_id=10094002]
 script = ExtResource("1_u44n3")
@@ -47,7 +121,6 @@ texture = ExtResource("3_t88pq")
 script = ExtResource("4_sb48q")
 
 [node name="OrderPanel" type="Panel" parent="OrderUI" unique_id=1968137621]
-visible = false
 z_index = 4
 anchors_preset = -1
 anchor_right = 0.035
@@ -66,3 +139,29 @@ offset_right = 252.0
 offset_bottom = 59.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "One scallion pancake, please!"
+
+[node name="AcceptButton" type="CanvasLayer" parent="." unique_id=241984577]
+script = ExtResource("5_r0x5m")
+
+[node name="AcceptButton" type="Button" parent="AcceptButton" unique_id=736479223]
+offset_left = 289.0
+offset_top = 484.0
+offset_right = 385.0
+offset_bottom = 515.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dt6fw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_r0x5m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3mrqo")
+text = "Accept"
+
+[node name="DeclineButton" type="CanvasLayer" parent="." unique_id=1487479871]
+script = ExtResource("6_3mrqo")
+
+[node name="DeclineButton" type="Button" parent="DeclineButton" unique_id=53507396]
+offset_left = 422.0
+offset_top = 485.0
+offset_right = 518.0
+offset_bottom = 516.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_phg8r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_joorw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2vekm")
+text = "Decline"

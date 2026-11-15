@@ -6,6 +6,8 @@ extends Node2D
 @onready var counter = $Background/OutdoorCounter
 @onready var background = $Background/FrontDoor
 @onready var order_ui = $OrderUI
+@onready var accept_button = $AcceptButton
+@onready var decline_button = $DeclineButton
 
 func _ready():
 	background.modulate.a = 0
@@ -39,3 +41,6 @@ func _ready():
 
 	await customer.move_to_counter(counter.global_position)
 	order_ui.show_order("One scallion pancake, please!")
+	await get_tree().create_timer(1.6).timeout
+	accept_button.show_accept_button()
+	decline_button.show_decline_button()
