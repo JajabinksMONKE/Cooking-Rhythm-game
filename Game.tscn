@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://weg1aa3c6g0q" path="res://DeclineButton.gd" id="6_3mrqo"]
 [ext_resource type="Script" uid="uid://cnpaqxyttadmu" path="res://DeclineButtonScript.gd" id="8_yx171"]
 [ext_resource type="Script" uid="uid://c8ss6060ke25q" path="res://BackButton2.gd" id="9_yhmtn"]
+[ext_resource type="Script" uid="uid://cmnik673nhced" path="res://ClockNumbers.gd" id="10_yx171"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wtcfe"]
 load_path = "res://.godot/imported/Example_Festive_Front_Door.png-9b4c2319e1bf46a667e8b7eb5d111aed.ctex"
@@ -268,3 +269,20 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_joorw")
 theme_override_styles/hover = SubResource("StyleBoxFlat_2vekm")
 text = "Decline"
 script = ExtResource("8_yx171")
+
+[node name="Clock" type="Control" parent="." unique_id=1672018082]
+z_index = 4096
+layout_mode = 3
+anchors_preset = 0
+offset_right = 163.0
+offset_bottom = 44.0
+
+[node name="ClockNumbers" type="RichTextLabel" parent="Clock" unique_id=254306734]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 17.0
+offset_right = 201.0
+offset_bottom = 68.0
+theme_override_font_sizes/normal_font_size = 18
+text = "Day 1, 00:00"
+script = ExtResource("10_yx171")
