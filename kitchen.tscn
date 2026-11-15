@@ -22,7 +22,7 @@ texture = ExtResource("1_vloss")
 
 [node name="Steak3" type="Sprite2D" parent="." unique_id=129123747]
 texture_filter = 1
-position = Vector2(649, 288.99994)
+position = Vector2(649, 289)
 scale = Vector2(1.7031264, 1.7031264)
 texture = ExtResource("2_xsyy8")
 script = ExtResource("3_efyc0")
@@ -62,7 +62,7 @@ texture = ExtResource("10_m008p")
 
 [node name="Wok" type="Sprite2D" parent="." unique_id=1804363169]
 texture_filter = 1
-position = Vector2(629, 281.00003)
+position = Vector2(628.0001, 282)
 rotation = -3.1415927
 scale = Vector2(5.260869, 5.260869)
 texture = ExtResource("11_06717")
