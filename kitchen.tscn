@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dd6n6u6rfmpdl"]
+
+[ext_resource type="Texture2D" uid="uid://byibwh677bwqt" path="res://Kitchen counter.png" id="1_vloss"]
+[ext_resource type="Texture2D" uid="uid://c5pkmh1i2cxvi" path="res://images/Raw food/steak3.png" id="2_xsyy8"]
+[ext_resource type="Script" uid="uid://7yhuaka6386t" path="res://raw_steak.gd" id="3_efyc0"]
+[ext_resource type="AudioStream" uid="uid://b2jfx60275cqf" path="res://Shaolin Monks.mp3" id="3_kdutl"]
+[ext_resource type="Texture2D" uid="uid://bpfsrcrr0fuha" path="res://images/VEGGIES/VEGGIES_LINE/Tomato.png" id="5_xnsi2"]
+[ext_resource type="Texture2D" uid="uid://bgcy7fnwb0qw2" path="res://images/VEGGIES/VEGGIES_LINE/GreenCabbage.png" id="6_jluyr"]
+[ext_resource type="Texture2D" uid="uid://bn0yfmykswieo" path="res://images/Raw food/fish3.png" id="8_ivwby"]
+[ext_resource type="Texture2D" uid="uid://cjwpiy5dg15na" path="res://images/Raw food/pork3.png" id="9_scder"]
+[ext_resource type="Texture2D" uid="uid://d3jicjvtuk1qv" path="res://images/Raw food/chiken3.png" id="10_m008p"]
+[ext_resource type="Texture2D" uid="uid://fy3yng66vadp" path="res://wok.png" id="11_06717"]
+[ext_resource type="Texture2D" uid="uid://5agvtqvbjw46" path="res://images/VEGGIES/VEGGIES_LINE/Leek.png" id="11_efyc0"]
+
+[node name="Kitchen" type="Node2D" unique_id=792813445]
+
+[node name="KitchenCounter" type="Sprite2D" parent="." unique_id=1965033804]
+texture_filter = 1
+position = Vector2(579, 218)
+scale = Vector2(8.84375, 8.84375)
+texture = ExtResource("1_vloss")
+
+[node name="Steak3" type="Sprite2D" parent="." unique_id=129123747]
+texture_filter = 1
+position = Vector2(649, 288.99994)
+scale = Vector2(1.7031264, 1.7031264)
+texture = ExtResource("2_xsyy8")
+script = ExtResource("3_efyc0")
+
+[node name="ShaolinMonkSong" type="AudioStreamPlayer" parent="." unique_id=2075323034]
+stream = ExtResource("3_kdutl")
+
+[node name="Tomato" type="Sprite2D" parent="." unique_id=876514996]
+texture_filter = 1
+position = Vector2(233.00002, 224)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("5_xnsi2")
+
+[node name="GreenCabbage" type="Sprite2D" parent="." unique_id=729759284]
+texture_filter = 1
+position = Vector2(312, 223)
+scale = Vector2(1.40625, 1.40625)
+texture = ExtResource("6_jluyr")
+
+[node name="Fish3" type="Sprite2D" parent="." unique_id=1572468629]
+texture_filter = 1
+position = Vector2(481.99997, 303)
+scale = Vector2(1.5625, 1.5625)
+texture = ExtResource("8_ivwby")
+
+[node name="Pork3" type="Sprite2D" parent="." unique_id=1632302901]
+texture_filter = 1
+position = Vector2(481, 381)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("9_scder")
+
+[node name="Chiken3" type="Sprite2D" parent="." unique_id=336271904]
+texture_filter = 1
+position = Vector2(479, 223)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("10_m008p")
+
+[node name="Wok" type="Sprite2D" parent="." unique_id=1804363169]
+texture_filter = 1
+position = Vector2(629, 281.00003)
+rotation = -3.1415927
+scale = Vector2(5.260869, 5.260869)
+texture = ExtResource("11_06717")
+
+[node name="Leek" type="Sprite2D" parent="." unique_id=1106549251]
+texture_filter = 1
+position = Vector2(393, 225)
+scale = Vector2(2, 2)
+texture = ExtResource("11_efyc0")

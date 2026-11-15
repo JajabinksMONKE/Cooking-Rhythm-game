@@ -8,4 +8,4 @@ func _ready():
 
 func _pressed():
 	position = position.move_toward(Vector2(649,289), speed * delta)
-		
+	-z_index
