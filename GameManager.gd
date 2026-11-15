@@ -17,7 +17,6 @@ func register_hit(accuracy_diff: float) -> void:
 	for n in 8: 
 		if is_game_over:
 			return
-		print(score)
 		await get_tree().create_timer(5).timeout
 
 func register_miss() -> void:
@@ -30,14 +29,13 @@ func register_miss() -> void:
 	for n in 8:
 		if is_game_over:
 			return
-		print(combo)
 		await get_tree().create_timer(5).timeout
 
 func end_game() -> void:
 	if is_game_over:
 		return
 		
-	if score >= 1000:
+	if score >= 10000:
 		is_game_over = true
 		get_tree().change_scene_to_file("res://Main.tscn")
 		return
