@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cjwpiy5dg15na" path="res://images/Raw food/pork3.png" id="9_scder"]
 [ext_resource type="Texture2D" uid="uid://d3jicjvtuk1qv" path="res://images/Raw food/chiken3.png" id="10_m008p"]
 [ext_resource type="Texture2D" uid="uid://fy3yng66vadp" path="res://wok.png" id="11_06717"]
+[ext_resource type="Script" uid="uid://cmnik673nhced" path="res://ClockNumbers.gd" id="12_s8a10"]
 
 [node name="Kitchen" type="Node2D" unique_id=792813445]
 
@@ -66,3 +67,20 @@ position = Vector2(629, 281.00003)
 rotation = -3.1415927
 scale = Vector2(5.260869, 5.260869)
 texture = ExtResource("11_06717")
+
+[node name="Clock" type="Control" parent="." unique_id=1888654483]
+z_index = 4096
+layout_mode = 3
+anchors_preset = 0
+offset_right = 163.0
+offset_bottom = 44.0
+
+[node name="ClockNumbers" type="RichTextLabel" parent="Clock" unique_id=72163897]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 17.0
+offset_right = 201.0
+offset_bottom = 68.0
+theme_override_font_sizes/normal_font_size = 18
+text = "Day 1, 00:00"
+script = ExtResource("12_s8a10")
