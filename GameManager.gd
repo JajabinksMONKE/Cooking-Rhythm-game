@@ -35,7 +35,7 @@ func end_game() -> void:
 	if is_game_over:
 		return
 		
-	if score >= 10000:
+	if score >= 5000:
 		is_game_over = true
 		get_tree().change_scene_to_file("res://Main.tscn")
 		return
