@@ -7,6 +7,7 @@
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=361728685]
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=750077352]
-position = Vector2(415, 184.99998)
-scale = Vector2(3.9242425, 3.6346154)
+texture_filter = 1
+position = Vector2(448.125, 230.75)
+scale = Vector2(5.9318185, 5.394231)
 texture = ExtResource("1_30h8o")
