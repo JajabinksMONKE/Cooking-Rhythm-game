@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://fy3yng66vadp" path="res://wok.png" id="11_06717"]
 [ext_resource type="Script" uid="uid://cmnik673nhced" path="res://ClockNumbers.gd" id="12_s8a10"]
 
+[sub_resource type="SphereMesh" id="SphereMesh_dt6fw"]
+
 [node name="Kitchen" type="Node2D" unique_id=792813445]
 
 [node name="KitchenCounter" type="Sprite2D" parent="." unique_id=1965033804]
@@ -84,3 +86,14 @@ offset_bottom = 68.0
 theme_override_font_sizes/normal_font_size = 18
 text = "Day 1, 00:00"
 script = ExtResource("12_s8a10")
+
+[node name="BouncyBall1" type="MeshInstance2D" parent="." unique_id=1447930060]
+position = Vector2(926, 360)
+scale = Vector2(66.69604, 63.60656)
+mesh = SubResource("SphereMesh_dt6fw")
+
+[node name="BouncedSurface" type="ColorRect" parent="." unique_id=1622332285]
+offset_left = 838.0
+offset_top = 576.0
+offset_right = 1141.0
+offset_bottom = 590.0
