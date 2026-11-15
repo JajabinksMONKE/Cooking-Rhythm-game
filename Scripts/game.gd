@@ -5,6 +5,7 @@ extends Node2D
 @onready var spawn_point = $CustomerSpawn
 @onready var counter = $Background/OutdoorCounter
 @onready var background = $Background/FrontDoor
+@onready var order_ui = $OrderUI
 
 func _ready():
 	background.modulate.a = 0
@@ -36,5 +37,5 @@ func _ready():
 		sprite.position = Vector2.ZERO
 		sprite.offset = Vector2.ZERO
 
-	var movement_tween = create_tween()
-	movement_tween.tween_property(customer, "global_position", counter.global_position, 2.0)
+	await customer.move_to_counter(counter.global_position)
+	order_ui.show_order("One scallion pancake, please!")

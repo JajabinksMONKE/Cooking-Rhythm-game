@@ -1,18 +1,32 @@
 [gd_scene format=3 uid="uid://dkt036jsy1iai"]
 
-[ext_resource type="Script" uid="uid://lajxa8lmxr6y" path="res://Scripts/game.gd" id="1_u44n3"]
+[ext_resource type="Script" uid="uid://lajxa8lmxr6y" path="res://Scripts/Game.gd" id="1_u44n3"]
 [ext_resource type="PackedScene" uid="uid://b03huq8c2scrr" path="res://Characters/Character 1.tscn" id="2_sb48q"]
 [ext_resource type="Texture2D" uid="uid://c85l6oryutknn" path="res://Counter_1.png" id="3_t88pq"]
+[ext_resource type="Script" uid="uid://c6pl4ul4eyhrt" path="res://OrderUI.gd" id="4_sb48q"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wtcfe"]
 load_path = "res://.godot/imported/Example_Festive_Front_Door.png-9b4c2319e1bf46a667e8b7eb5d111aed.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u44n3"]
+bg_color = Color(1, 0.4117647, 0.52156866, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.3647059, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="Game" type="Node2D" unique_id=10094002]
 script = ExtResource("1_u44n3")
 customer_scene = ExtResource("2_sb48q")
 
 [node name="CustomerSpawn" type="Marker2D" parent="." unique_id=901262055]
-position = Vector2(657, 459)
+position = Vector2(684, 426)
 
 [node name="Background" type="Node2D" parent="." unique_id=607611893]
 
@@ -28,3 +42,27 @@ z_index = 10
 position = Vector2(579, 499.99997)
 scale = Vector2(9.1328125, 3.7187502)
 texture = ExtResource("3_t88pq")
+
+[node name="OrderUI" type="CanvasLayer" parent="." unique_id=764013935]
+script = ExtResource("4_sb48q")
+
+[node name="OrderPanel" type="Panel" parent="OrderUI" unique_id=1968137621]
+visible = false
+z_index = 4
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.062000003
+offset_left = 267.0
+offset_top = 381.0
+offset_right = 502.68
+offset_bottom = 434.824
+theme_override_styles/panel = SubResource("StyleBoxFlat_u44n3")
+
+[node name="OrderText" type="Label" parent="OrderUI/OrderPanel" unique_id=762402715]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 36.0
+offset_right = 252.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "One scallion pancake, please!"
