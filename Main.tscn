@@ -1,0 +1,294 @@
+[gd_scene format=3 uid="uid://b3mdobppjpa2o"]
+
+[ext_resource type="Script" uid="uid://co21fdb1pwein" path="res://Scripts/StartButton.gd" id="1_fos0i"]
+[ext_resource type="Texture2D" uid="uid://b2newa8wnpfog" path="res://images/Decorations/Lantern_String.png" id="1_glv2v"]
+[ext_resource type="Texture2D" uid="uid://dx17qoisis544" path="res://images/Decorations/Lantern_Red.png" id="2_uu6xs"]
+[ext_resource type="Script" uid="uid://xk3tqglouuex" path="res://Scripts/Lantern1Script.gd" id="3_cm0pq"]
+[ext_resource type="Script" uid="uid://bk5g00gh3ix6q" path="res://Scripts/CreditsButton.gd" id="3_lgr22"]
+[ext_resource type="Script" uid="uid://dxhwj11hbgjye" path="res://Scripts/Lantern2Script.gd" id="3_r0du0"]
+[ext_resource type="Script" uid="uid://dupkg43bhcltn" path="res://Scripts/Main.gd" id="6_3dxm6"]
+[ext_resource type="Script" uid="uid://cainmnmoxo153" path="res://Scripts/BackButton.gd" id="8_trn2v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kh0ps"]
+bg_color = Color(0.64791876, 0, 0.15865201, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fos0i"]
+bg_color = Color(0.44854087, 0, 0.09804956, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u44n3"]
+bg_color = Color(0.8963444, 0.00017476275, 0.23423961, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm0pq"]
+bg_color = Color(0.5170921, 0, 0.11888582, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dxm6"]
+bg_color = Color(0.44854087, 0, 0.09804956, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="Gradient" id="Gradient_uu6xs"]
+interpolation_color_space = 1
+offsets = PackedFloat32Array(0.20542635, 1)
+colors = PackedColorArray(0.28627452, 0.21176471, 0.36862746, 1, 0.06666667, 0.105882354, 0.21960784, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_dt6fw"]
+gradient = SubResource("Gradient_uu6xs")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dt6fw"]
+bg_color = Color(0.09019608, 0.08235294, 0.1764706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.6509804, 0.29411766, 0.3137255, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_phg8r"]
+bg_color = Color(0.57176065, 0.31331444, 0.41294843, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6786563, 0.67751807, 0.270618, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1uys"]
+bg_color = Color(0.78224903, 0, 0.29482406, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6786563, 0.67751807, 0.270618, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4yost"]
+bg_color = Color(1, 0.61935276, 0.6689041, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6786563, 0.67751807, 0.270618, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Main" type="Node2D" unique_id=1663927764]
+script = ExtResource("6_3dxm6")
+
+[node name="MainMenu" type="CanvasLayer" parent="." unique_id=1410778619]
+
+[node name="Background" type="ColorRect" parent="MainMenu" unique_id=662106194]
+offset_right = 1156.0
+offset_bottom = 653.0
+
+[node name="Title" type="Label" parent="MainMenu/Background" unique_id=1244058913]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+offset_left = 392.0
+offset_top = 219.0
+offset_right = 725.0
+offset_bottom = 360.0
+pivot_offset = Vector2(554, 89)
+theme_override_colors/font_color = Color(0.9331736, 0, 0.1764819, 1)
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 3
+theme_override_font_sizes/font_size = 50
+text = "A+ Cooking
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title2" type="Label" parent="MainMenu/Background" unique_id=877780914]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+offset_left = 395.0
+offset_top = 220.0
+offset_right = 728.0
+offset_bottom = 361.0
+pivot_offset = Vector2(554, 89)
+theme_override_colors/font_color = Color(0.9331736, 0, 0.1764819, 1)
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 3
+theme_override_font_sizes/font_size = 50
+text = "A+ Cooking
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="MainMenu/Background" unique_id=224942853]
+z_index = 2
+layout_mode = 0
+offset_left = 430.0
+offset_top = 330.0
+offset_right = 708.0
+offset_bottom = 410.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_kh0ps")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fos0i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u44n3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_cm0pq")
+text = "START"
+script = ExtResource("1_fos0i")
+
+[node name="CreditsButton" type="Button" parent="MainMenu/Background" unique_id=1584858442]
+z_index = 2
+layout_mode = 0
+offset_left = 430.0
+offset_top = 434.0
+offset_right = 708.0
+offset_bottom = 514.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_kh0ps")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3dxm6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u44n3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_cm0pq")
+text = "CREDITS"
+script = ExtResource("3_lgr22")
+
+[node name="Gradient" type="TextureRect" parent="MainMenu/Background" unique_id=752704339]
+layout_mode = 0
+offset_left = -197.0
+offset_top = -28.0
+offset_right = 1469.0
+offset_bottom = 672.0
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_dt6fw")
+
+[node name="LanternString" type="Sprite2D" parent="MainMenu/Background" unique_id=507080050]
+z_index = 2
+texture_filter = 1
+position = Vector2(104, 81.00001)
+scale = Vector2(1.5885416, 1.640625)
+texture = ExtResource("1_glv2v")
+
+[node name="LanternString2" type="Sprite2D" parent="MainMenu/Background" unique_id=1708843046]
+z_index = 2
+texture_filter = 1
+position = Vector2(301, 82)
+scale = Vector2(1.5885416, 1.640625)
+texture = ExtResource("1_glv2v")
+
+[node name="LanternString3" type="Sprite2D" parent="MainMenu/Background" unique_id=800436232]
+z_index = 2
+texture_filter = 1
+position = Vector2(498, 84)
+scale = Vector2(1.5885416, 1.640625)
+texture = ExtResource("1_glv2v")
+
+[node name="LanternString4" type="Sprite2D" parent="MainMenu/Background" unique_id=1521128284]
+z_index = 2
+texture_filter = 1
+position = Vector2(696, 85)
+scale = Vector2(1.5885416, 1.640625)
+texture = ExtResource("1_glv2v")
+
+[node name="LanternString5" type="Sprite2D" parent="MainMenu/Background" unique_id=211369340]
+z_index = 2
+texture_filter = 1
+position = Vector2(893.99994, 85)
+scale = Vector2(1.5885416, 1.640625)
+texture = ExtResource("1_glv2v")
+
+[node name="LanternString6" type="Sprite2D" parent="MainMenu/Background" unique_id=1308978916]
+z_index = 2
+texture_filter = 1
+position = Vector2(1094, 84)
+scale = Vector2(1.5885416, 1.640625)
+texture = ExtResource("1_glv2v")
+
+[node name="LanternRed" type="Sprite2D" parent="MainMenu/Background" unique_id=1822651652]
+position = Vector2(302, 263)
+texture = ExtResource("2_uu6xs")
+script = ExtResource("3_cm0pq")
+
+[node name="LanternRed2" type="Sprite2D" parent="MainMenu/Background" unique_id=541807204]
+position = Vector2(814, 258)
+texture = ExtResource("2_uu6xs")
+script = ExtResource("3_r0du0")
+
+[node name="CreditsPanel" type="Panel" parent="MainMenu" unique_id=2035495829]
+visible = false
+z_index = 1000
+offset_left = 397.0
+offset_top = 161.0
+offset_right = 742.0
+offset_bottom = 530.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dt6fw")
+
+[node name="CreditsTitle" type="Label" parent="MainMenu/CreditsPanel" unique_id=442938081]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 53.0
+offset_right = 207.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0.8392157, 0.35686275, 0.3764706, 1)
+theme_override_font_sizes/font_size = 23
+text = "Credits"
+
+[node name="Names" type="Label" parent="MainMenu/CreditsPanel" unique_id=1982691691]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 107.0
+offset_right = 324.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(0.9137255, 0.84705883, 0.77254903, 1)
+text = "The biggest nerd  : William Yee
+The normal dude : Michel Ding
+
+Pls we need like money so it would be
+very like very appreciated if you gave
+us like 20 bucks hihi."
+
+[node name="BackButton" type="Button" parent="MainMenu/CreditsPanel" unique_id=1169317312]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 294.0
+offset_right = 205.0
+offset_bottom = 331.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_phg8r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f1uys")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4yost")
+text = "BACK"
+script = ExtResource("8_trn2v")
+
+[node name="Transition" type="CanvasLayer" parent="." unique_id=2116680565]
+visible = false
+
+[node name="Fade" type="ColorRect" parent="Transition" unique_id=2033565070]
+offset_left = -16.0
+offset_top = -10.0
+offset_right = 1163.0
+offset_bottom = 661.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

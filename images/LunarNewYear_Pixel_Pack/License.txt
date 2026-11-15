@@ -1,0 +1,22 @@
+Lunar New Year Pixel Pack - License (version 1.02)
+============================================================
+
+YOU MAY
+- Use the sprites in personal and commercial projects (games, apps, videos,
+  prototypes, game jams), as many projects as you like.
+- Modify the sprites: recolour, crop, resize, animate, combine them.
+- Distribute the sprites as part of your finished project (for example
+  inside your game's files).
+
+YOU MAY NOT
+- Resell, redistribute or share the sprites on their own or as part of
+  another asset pack, sprite collection or template, even if modified.
+- Claim the sprites as your own original artwork.
+- Use the sprites in NFTs, blockchain projects, or in datasets for
+  training AI models.
+
+CREDIT
+Credit is not required, but it is always appreciated, for example:
+"Lunar New Year Pixel Pack" in your game's credits.
+
+The pack is provided "as is", without warranty of any kind.

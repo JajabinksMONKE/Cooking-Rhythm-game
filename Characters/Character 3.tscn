@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dfwu4qy065umg"]
+
+[ext_resource type="Texture2D" uid="uid://dkkxemamtq5gd" path="res://images/kimono girls/yellow_girl_still_front.png" id="1_y3d1a"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=282329774]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1000157307]
+texture_filter = 1
+position = Vector2(373.5, 281.75)
+scale = Vector2(5.305556, 5.186274)
+texture = ExtResource("1_y3d1a")

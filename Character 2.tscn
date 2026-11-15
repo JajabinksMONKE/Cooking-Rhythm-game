@@ -1,13 +1,10 @@
-[gd_scene format=3 uid="uid://mh3um2aeqh64"]
+[gd_scene format=3 uid="uid://cfkoj8jqeiyuo"]
 
-[ext_resource type="Texture2D" uid="uid://beml6m1m8hioc" path="res://kimono girls/red_girl_still_front.png" id="1_30h8o"]
+[ext_resource type="Texture2D" uid="uid://beml6m1m8hioc" path="res://images/kimono girls/red_girl_still_front.png" id="1_30h8o"]
 
-[node name="Node2D" type="Node2D" unique_id=1618446659]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=361728685]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=361728685]
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=750077352]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=750077352]
 texture_filter = 1
-position = Vector2(448.125, 230.75)
 scale = Vector2(5.9318185, 5.394231)
 texture = ExtResource("1_30h8o")

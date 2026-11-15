@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b03huq8c2scrr"]
+
+[ext_resource type="Texture2D" uid="uid://pi4u0ysvuba7" path="res://images/kimono girls/blue_girl_still_front.png" id="1_wt8xu"]
+
+[node name="Node2D" type="Node2D" unique_id=1954987630]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=642170407]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=155153153]
+texture_filter = 1
+position = Vector2(612.5, 310.25)
+scale = Vector2(4.775, 4.84375)
+texture = ExtResource("1_wt8xu")
