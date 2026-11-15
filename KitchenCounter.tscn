@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://fy3yng66vadp" path="res://wok.png" id="11_06717"]
 [ext_resource type="Script" uid="uid://cmnik673nhced" path="res://ClockNumbers.gd" id="12_s8a10"]
 [ext_resource type="Script" uid="uid://cy1cu687q0erc" path="res://BouncyBallScript.gd" id="13_gkthl"]
+[ext_resource type="Script" uid="uid://c3657kkls54wg" path="res://BouncyBall2.gd" id="14_b5eyb"]
 [ext_resource type="Script" uid="uid://snq1dh44ysd5" path="res://RectangleCollision.gd" id="14_h2b1e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dt6fw"]
@@ -105,6 +106,19 @@ shape = SubResource("CircleShape2D_dt6fw")
 
 [node name="BouncyBall1" type="MeshInstance2D" parent="BouncyBall1" unique_id=1447930060]
 position = Vector2(922.00006, 547)
+scale = Vector2(66.69604, 63.60656)
+mesh = SubResource("SphereMesh_dt6fw")
+
+[node name="BouncyBall2" type="CharacterBody2D" parent="." unique_id=1103777564]
+script = ExtResource("14_b5eyb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BouncyBall2" unique_id=1176301595]
+position = Vector2(1047, 548)
+scale = Vector2(0.99999994, 1)
+shape = SubResource("CircleShape2D_dt6fw")
+
+[node name="BouncyBall1" type="MeshInstance2D" parent="BouncyBall2" unique_id=288666238]
+position = Vector2(1047.0001, 547)
 scale = Vector2(66.69604, 63.60656)
 mesh = SubResource("SphereMesh_dt6fw")
 
