@@ -7,10 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://bpfsrcrr0fuha" path="res://images/VEGGIES/VEGGIES_LINE/Tomato.png" id="5_xnsi2"]
 [ext_resource type="Texture2D" uid="uid://bgcy7fnwb0qw2" path="res://images/VEGGIES/VEGGIES_LINE/GreenCabbage.png" id="6_jluyr"]
 [ext_resource type="Texture2D" uid="uid://bn0yfmykswieo" path="res://images/Raw food/fish3.png" id="8_ivwby"]
+[ext_resource type="Script" uid="uid://ddxardexn4thn" path="res://fish_3.gd" id="8_k6unl"]
 [ext_resource type="Texture2D" uid="uid://cjwpiy5dg15na" path="res://images/Raw food/pork3.png" id="9_scder"]
+[ext_resource type="Script" uid="uid://dixon61g2b8jg" path="res://pork_3.gd" id="10_ivwby"]
 [ext_resource type="Texture2D" uid="uid://d3jicjvtuk1qv" path="res://images/Raw food/chiken3.png" id="10_m008p"]
 [ext_resource type="Texture2D" uid="uid://fy3yng66vadp" path="res://wok.png" id="11_06717"]
 [ext_resource type="Texture2D" uid="uid://5agvtqvbjw46" path="res://images/VEGGIES/VEGGIES_LINE/Leek.png" id="11_efyc0"]
+[ext_resource type="Script" uid="uid://bn3vap0cg2h1q" path="res://chiken_3.gd" id="12_scder"]
 
 [node name="Kitchen" type="Node2D" unique_id=792813445]
 
@@ -47,18 +50,21 @@ texture_filter = 1
 position = Vector2(481.99997, 303)
 scale = Vector2(1.5625, 1.5625)
 texture = ExtResource("8_ivwby")
+script = ExtResource("8_k6unl")
 
 [node name="Pork3" type="Sprite2D" parent="." unique_id=1632302901]
 texture_filter = 1
 position = Vector2(481, 381)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("9_scder")
+script = ExtResource("10_ivwby")
 
 [node name="Chiken3" type="Sprite2D" parent="." unique_id=336271904]
 texture_filter = 1
 position = Vector2(479, 223)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("10_m008p")
+script = ExtResource("12_scder")
 
 [node name="Wok" type="Sprite2D" parent="." unique_id=1804363169]
 texture_filter = 1

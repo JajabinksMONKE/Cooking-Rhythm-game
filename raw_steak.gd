@@ -1,7 +1,7 @@
 extends Sprite2D
 
 var speed = 400
-var delta = 1
+var delta = 2
 
 func _ready():
 	self.position = Vector2(481, 459)
