@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2jfx60275cqf"
+path="res://.godot/imported/Shaolin Monks.mp3-62ea3174db53434976ad3f3fa0e03d96.mp3str"
+
+[deps]
+
+source_file="res://Shaolin Monks.mp3"
+dest_files=["res://.godot/imported/Shaolin Monks.mp3-62ea3174db53434976ad3f3fa0e03d96.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://blo4o1yh4si2x"]
 
-[ext_resource type="Texture2D" uid="uid://byibwh677bwqt" path="res://Kitchen counter.png" id="1_s6j7x"]
+[ext_resource type="Texture2D" uid="uid://byibwh677bwqt" path="res://Kitchen counter.png" id="1_vloss"]
+[ext_resource type="Texture2D" uid="uid://c5pkmh1i2cxvi" path="res://images/Raw food/steak3.png" id="2_xsyy8"]
+[ext_resource type="AudioStream" uid="uid://b2jfx60275cqf" path="res://Shaolin Monks.mp3" id="3_kdutl"]
 
 [node name="Kitchen" type="Node2D" unique_id=792813445]
 
@@ -8,4 +10,13 @@
 texture_filter = 1
 position = Vector2(579, 218)
 scale = Vector2(8.84375, 8.84375)
-texture = ExtResource("1_s6j7x")
+texture = ExtResource("1_vloss")
+
+[node name="Steak3" type="Sprite2D" parent="." unique_id=129123747]
+texture_filter = 1
+position = Vector2(482.00003, 457.00003)
+scale = Vector2(2.093751, 2.093751)
+texture = ExtResource("2_xsyy8")
+
+[node name="ShaolinMonkSong" type="AudioStreamPlayer" parent="." unique_id=2075323034]
+stream = ExtResource("3_kdutl")
