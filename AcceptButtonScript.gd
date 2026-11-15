@@ -1,3 +1,3 @@
 extends Button
 func _pressed():
-	get_node("/root/KitchenCounter").start_game()
+	get_tree().change_scene_to_file("res://kitchenCounter.tscn")

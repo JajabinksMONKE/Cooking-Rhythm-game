@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://blo4o1yh4si2x"]
 
-[ext_resource type="Texture2D" uid="uid://byibwh677bwqt" path="res://Kitchen counter.png" id="1_vloss"]
+[ext_resource type="Texture2D" uid="uid://byibwh677bwqt" path="res://Kitchen counter.png" id="1_s6j7x"]
 
 [node name="Kitchen" type="Node2D" unique_id=792813445]
 
@@ -8,4 +8,4 @@
 texture_filter = 1
 position = Vector2(579, 218)
 scale = Vector2(8.84375, 8.84375)
-texture = ExtResource("1_vloss")
+texture = ExtResource("1_s6j7x")
